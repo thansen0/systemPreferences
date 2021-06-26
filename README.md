@@ -7,4 +7,7 @@ This is just a few of my personal system preferences, updated over time, for whe
 ```
 ~/.vimrc
 ~/.tmux.conf
+~/.config/i3/config
 ```
+
+For i3 you'll have to install feh (sudo pacman -S feh) and you may have to move the config out of etc
