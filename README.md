@@ -4,6 +4,7 @@ This is just a few of my personal system preferences, updated over time, for whe
 
 # File locations
 
+```
 ~/.vimrc
 ~/.tmux.conf
-
+```
