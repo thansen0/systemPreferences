@@ -4,8 +4,8 @@
 :set expandtab
 :colorscheme desert
 
-# if I ever have issues with key presses uncomment this
-# :set nocompatible
+" if I ever have issues with key presses uncomment this
+" :set nocompatible
 
-# vim should adjust for makefile, but this will include Makefile
+" vim should adjust for makefile, but this will include Makefile
 autocmd FileType make setlocal noexpantab
