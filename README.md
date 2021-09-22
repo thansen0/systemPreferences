@@ -35,6 +35,16 @@ Section "InputClass"
 EndSection
 ```
 
+### Wayland
+
+In wayland things are different, and I modified my sway file
+```
+input 2:7:SynPS/2_Synaptics_TouchPad {
+    natural_scroll enable
+    pointer_accel .55
+}
+```
+
 # Login (github)
 
 First I need to create a [token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), and then add it to my ~/.netrc file. It should look like this:
