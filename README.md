@@ -45,7 +45,7 @@ input 2:7:SynPS/2_Synaptics_TouchPad {
 }
 ```
 
-# Login (github)
+# Github login
 
 First I need to create a [token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), and then add it to my ~/.netrc file. It should look like this:
 
@@ -53,3 +53,10 @@ First I need to create a [token](https://docs.github.com/en/github/authenticatin
 machine github.com login thansen0 password ghp_<token>
 ```
 
+# Euler
+
+```
+ssh -XY thansen8@euler-login-2.wacc.wisc.edu
+```
+
+Use slurm job scheduler, should also allow you to query commands and look at available hardware. Basically if I wrote it, it should run under slurm. Can view [documentation here](https://wacc.wisc.edu/resources/docs/slurm.html).
