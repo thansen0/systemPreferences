@@ -60,3 +60,21 @@ ssh -XY thansen8@euler-login-2.wacc.wisc.edu
 ```
 
 Use slurm job scheduler, should also allow you to query commands and look at available hardware. Basically if I wrote it, it should run under slurm. Can view [documentation here](https://wacc.wisc.edu/resources/docs/slurm.html).
+
+# Wifi
+
+```
+nmcli device wifi list
+nmcli device wifi connect <name>
+```
+
+# Docker
+
+You can enable its startup on boot with
+
+```
+sudo systemctl start docker.service  # starts the service
+sudo systemctl enable docker.service # enables, so it will start on boot every time
+```
+
+
