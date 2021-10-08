@@ -61,6 +61,52 @@ ssh -XY thansen8@euler-login-2.wacc.wisc.edu
 
 Use slurm job scheduler, should also allow you to query commands and look at available hardware. Basically if I wrote it, it should run under slurm. Can view [documentation here](https://wacc.wisc.edu/resources/docs/slurm.html).
 
+# Dev Nodes
+
+```
+ssh curie
+ssh gaussi // older
+// find system information
+htop - system information
+w - shows
+nvidia-smi - shows gpu usage
+```
+And from outside of the euler login node, I can run
+
+```
+ssh thansen8@curie
+```
+Which should log me directly onto curie with xforwarding. This is enabled by adding this script to my ssh config file, which forwards all io past euler to my machine.
+
+```
+Host euler-login-2
+    Hostname %h.wacc.wisc.edu
+    User thansen8
+
+Host curie
+    Hostname %h.wacc.wisc.edu
+    User thansen8
+    ProxyCommand ssh euler-login-2 -W %h:%p
+```
+
+# tmux
+
+```
+tmux new -S session-name
+tmux ls
+tmux attach -d -t session-name
+tmux attach -t session-number
+```
+
+ctrl-b-d detach
+ctrl-b-" split vertically
+ctrl-b-% split horizontally
+ctrl-b-h/j/l/k move left/bottom/right/up
+ctrl-b-x kill current pane
+ctrl-b-c creates new window
+ctrl-b-n change to next window
+ctrl-b-0 to 9 change through window
+
 # Wifi
 
 ```
@@ -76,5 +122,4 @@ You can enable its startup on boot with
 sudo systemctl start docker.service  # starts the service
 sudo systemctl enable docker.service # enables, so it will start on boot every time
 ```
-
 
