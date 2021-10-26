@@ -7,10 +7,10 @@ This is just a few of my personal system preferences, updated over time, for whe
 ```
 ~/.vimrc
 ~/.tmux.conf
-~/.config/i3/config
+~/.config/sway/config
 ```
 
-For i3 you'll have to install feh (sudo pacman -S feh) and you may have to move the config out of etc
+For i3/sway you'll have to install feh (sudo pacman -S feh) and you may have to move the config out of etc
 
 # Scroll direction
 
@@ -96,6 +96,7 @@ tmux new -S session-name
 tmux ls
 tmux attach -d -t session-name
 tmux attach -t session-number
+tmux kill-session -t session-number
 ```
 
 ctrl-b-d detach
@@ -121,5 +122,13 @@ You can enable its startup on boot with
 ```
 sudo systemctl start docker.service  # starts the service
 sudo systemctl enable docker.service # enables, so it will start on boot every time
+```
+
+# Sherlock
+
+Used to look up usernames of other users. https://github.com/sherlock-project/sherlock.
+
+```
+python3 sherlock username
 ```
 

@@ -212,13 +212,10 @@ bar {
     #status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
     status_command i3blocks
 
-    # acpi -b
-#    status_command while acpi -b; do sleep 60; done
-
     colors {
         statusline #ffffff
         background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+#        inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
 
