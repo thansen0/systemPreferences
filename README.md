@@ -65,7 +65,7 @@ Use slurm job scheduler, should also allow you to query commands and look at ava
 
 ```
 ssh curie
-ssh gaussi // older
+ssh gauss // older
 // find system information
 htop - system information
 w - shows

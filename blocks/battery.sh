@@ -9,14 +9,18 @@ URGENT_VALUE=20
 
 if [[ "${BATTERY_STATE}" = "Charging" ]]; then
   if [[ ${BATTERY_POWER} < 25 ]]; then
-    print -P "%B%F{166}Charging ${BATTERY_POWER}%%%f%b"
+    print "Charging ${BATTERY_POWER}%"
+#    print -P "%B%F{166}Charging ${BATTERY_POWER}%%%f%b"
   else
-    print -P "%B%F{035}Charging ${BATTERY_POWER}%%%f%b"
+    print -P "Charging ${BATTERY_POWER}%"
+#    print -P "%B%F{035}Charging ${BATTERY_POWER}%%%f%b"
   fi
 elif [[ "${BATTERY_STATE}" = "Discharging" ]]; then
-  print -P "%B%F{080}Discharging ${BATTERY_POWER}%%%f%b"
+  print -P "Discharging ${BATTERY_POWER}%"
+#  print -P "%B%F{080}Discharging ${BATTERY_POWER}%%%f%b"
 else
-  print -P "%B%F{080}Full ${BATTERY_POWER}%%%f%b"
+  print -P "Full ${BATTERY_POWER}%"
+#  print -P "%B%F{080}Full ${BATTERY_POWER}%%%f%b"
 fi
 
 if [[ "${BATTERY_POWER}" -le "${URGENT_VALUE}" ]]; then
