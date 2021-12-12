@@ -53,6 +53,14 @@ First I need to create a [token](https://docs.github.com/en/github/authenticatin
 machine github.com login thansen0 password ghp_<token>
 ```
 
+# Disk Space
+
+We can view disk space by running 
+
+```
+df -h
+```
+
 # Euler
 
 ```
@@ -115,6 +123,14 @@ nmcli device wifi list
 nmcli device wifi connect <name>
 ```
 
+# Bluetooth
+
+```
+sudo systemctl start bluetooth (.service can be added optionally)
+bluetoothctl power on
+bluetooth scan
+```
+
 # Docker
 
 You can enable its startup on boot with
@@ -132,3 +148,6 @@ Used to look up usernames of other users. https://github.com/sherlock-project/sh
 python3 sherlock username
 ```
 
+# Python Jupyter
+
+Run `jupyter notebook` in the command line to open it up

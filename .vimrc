@@ -10,4 +10,4 @@
 " :set nocompatible
 
 " vim should adjust for makefile, but this will include Makefile
-autocmd FileType make setlocal noexpantab
+autocmd FileType make setlocal noexpandtab
