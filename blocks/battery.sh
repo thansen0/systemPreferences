@@ -12,14 +12,14 @@ if [[ "${BATTERY_STATE}" = "Charging" ]]; then
     print "Charging ${BATTERY_POWER}%"
 #    print -P "%B%F{166}Charging ${BATTERY_POWER}%%%f%b"
   else
-    print -P "Charging ${BATTERY_POWER}%"
+    print "Charging ${BATTERY_POWER}%"
 #    print -P "%B%F{035}Charging ${BATTERY_POWER}%%%f%b"
   fi
 elif [[ "${BATTERY_STATE}" = "Discharging" ]]; then
-  print -P "Discharging ${BATTERY_POWER}%"
+  print "Discharging ${BATTERY_POWER}%"
 #  print -P "%B%F{080}Discharging ${BATTERY_POWER}%%%f%b"
 else
-  print -P "Full ${BATTERY_POWER}%"
+  print "Full ${BATTERY_POWER}%"
 #  print -P "%B%F{080}Full ${BATTERY_POWER}%%%f%b"
 fi
 

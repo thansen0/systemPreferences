@@ -199,6 +199,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 # take screenshot
 bindsym --release Print exec grim ~/Pictures/$(date +'%a_%m-%M_%S_grim.png')
+bindsym $mod+Print exec grim ~/Pictures/$(date +'%a_%m-%M_%S_grim.png')
 
 #
 # Status Bar:

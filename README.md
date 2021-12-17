@@ -151,3 +151,10 @@ python3 sherlock username
 # Python Jupyter
 
 Run `jupyter notebook` in the command line to open it up
+
+# Brave (Chrome)
+
+ctl-# to cycle through tabs
+ctl-w to close current window
+ctl-shift-t opens last closed tab
+ctl-t opens new tab
