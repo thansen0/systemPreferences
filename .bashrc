@@ -6,6 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='grep --color=auto'
+alias egrep='grep --color=auto'
 
 # open images with feh scaled properly
 alias feh='feh --scale-down --auto-zoom'
