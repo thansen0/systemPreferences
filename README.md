@@ -111,7 +111,7 @@ ctrl-b-d detach
 ctrl-b-" split vertically
 ctrl-b-% split horizontally
 ctrl-b-h/j/l/k move left/bottom/right/up
-ctrl-b-x kill current pane
+ctrl-b-x kill current pane (non-responsive)
 ctrl-b-c creates new window
 ctrl-b-n change to next window
 ctrl-b-0 to 9 change through window
@@ -138,6 +138,15 @@ You can enable its startup on boot with
 ```
 sudo systemctl start docker.service  # starts the service
 sudo systemctl enable docker.service # enables, so it will start on boot every time
+```
+
+# nmap
+
+Scan all IP's on a network. For example to scan all 192.168.1.1-254 can be done with
+
+```
+nmap -sP 192.168.1.*
+nmap -sn 192.168.1.0/24
 ```
 
 # Sherlock
