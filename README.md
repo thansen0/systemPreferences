@@ -61,6 +61,13 @@ We can view disk space by running
 df -h
 ```
 
+# Vim
+
+```
+:g/word/d // deletes all lines containing that word
+:%s/original/NewWord/g // replaces original with NewWord
+```
+
 # Euler
 
 ```
@@ -147,6 +154,32 @@ Scan all IP's on a network. For example to scan all 192.168.1.1-254 can be done 
 ```
 nmap -sP 192.168.1.*
 nmap -sn 192.168.1.0/24
+```
+
+# Git
+
+Set up a git server on my sibyl VPS. To initialize log into the server using
+```
+cd ~/git/project.git
+git init --bare
+```
+
+And the I can push to that project using
+```
+git remote add origin git@sibyl:/home/git/git/project.git
+```
+
+Lastly I can pull from it using
+```
+git clone git@sibyl:/home/git/git/project.git
+cd project
+```
+
+And if I need to add a new machine use ssh-copy-id, which copies my public key in id\_rsa.pub into the authorized\_keys file on the remote machine. You need to remove the back slash
+```
+cd ~/.ssh
+ssh-keygen -t rsa // this will generate the key pair if you don't already have one
+ssh-copy-id -i ~/.ssh/id\_rsa.pub git@sibyl
 ```
 
 # Sherlock
