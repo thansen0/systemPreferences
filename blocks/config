@@ -11,21 +11,21 @@
 separator=true
 separator_block_width=15
 
-#[ip]
 #color=#91E78B
-#command=hostname -i | awk '{ print "IP:" $1 }'
-#command=hostname -i
-#interval=once
+#command=ip -json route get 8.8.8.8 | jq -r '.[].prefsrc'
+[ip]
+color=#1bdbe3
+command=ip -o -4 addr list wlp3s0 | awk '{print $4}' | cut -d/ -f1
+interval=once
 
 [audio]
-#color=#91E78B
-#color=#1bdbe3
 command=echo -n "Volume " && awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master)
-interval=7
+instance=Master
+interval=5
 
 [brightness]
 command=zsh blocks/brightness.sh
-interval=7
+interval=5
 
 [battery]
 color=#1bdbe3
