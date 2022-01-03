@@ -1,3 +1,3 @@
 # i3 Docs
 
-I'm not using i3 right now, leaving up in case I switch back or need it for reference.
+Used for my xeon phi machine, set up for 2 displays using i3status, it may not work properly without both monitors
