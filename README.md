@@ -63,6 +63,8 @@ df -h
 
 # Vim
 
+Simple vim commands I use a lot
+
 ```
 :g/word/d // deletes all lines containing that word
 :%s/original/NewWord/g // replaces original with NewWord
@@ -181,6 +183,13 @@ cd ~/.ssh
 ssh-keygen -t rsa // this will generate the key pair if you don't already have one
 ssh-copy-id -i ~/.ssh/id\_rsa.pub git@sibyl
 ```
+
+# audio input
+
+Not fully working yet, but uncommented ```load-module module-alsa-source device=hw:0,0``` from /etc/pulse/default.pa, and installed pavucontrol (which also installed atkmm cairomm glibmm gtkmm3 libsigc++ pangomm)
+
+
+Run pavucontrol to see gui open for editing audio, which is neat
 
 # Sherlock
 
