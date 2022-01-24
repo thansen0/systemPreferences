@@ -125,6 +125,21 @@ ctrl-b-c creates new window
 ctrl-b-n change to next window
 ctrl-b-0 to 9 change through window
 
+# Privacy Guard
+Merged in 5.4, it should be accessible with the file /proc/acpi/ibm/lcdshadow, the file looks like
+
+```
+status:     1
+commands:   0, 1
+```
+And it can be accessed using
+
+```
+sudo su
+echo 0 > /proc/acpi/ibm/lcdshadow
+```
+It doesn't work though and I don't know why or care.
+
 # Wifi
 
 ```
