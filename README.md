@@ -85,7 +85,7 @@ ssh curie
 ssh gauss // older
 // find system information
 htop - system information
-w - shows
+w - shows other users on system
 nvidia-smi - shows gpu usage
 ```
 And from outside of the euler login node, I can run
