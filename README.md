@@ -218,6 +218,14 @@ python3 sherlock username
 
 Run `jupyter notebook` in the command line to open it up
 
+# ffmpeg
+
+Convert a jpg to a png
+
+```
+ffmpeg -i input.jpg -preset ultrafast output.png
+```
+
 # Brave (Chrome)
 
 ctl-# to cycle through tabs
