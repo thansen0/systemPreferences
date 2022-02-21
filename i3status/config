@@ -1,0 +1,59 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "ethernet _first_"
+order += "volume"
+order += "disk /"
+order += "load"
+order += "cpu_temperature 0"
+order += "memory"
+order += "tztime local"
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+volume master {
+        format = "V %volume"
+        format_muted = "M %volume"
+#        device = "pulse:alsa_output.usb-KTMicro_KT_USB_AUDIO_214b206000000178-00.analog-stereo"
+        device = "default"
+#        device = "pulse:alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+disk "/" {
+        format = "%avail"
+}
+
+# number of porcesses waiting for CPU time
+load {
+        format = "%1min %5min"
+}
+
+cpu_temperature 0 {
+        format = "%degrees °C"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
+}
+
+memory {
+        format = "%used / %available RAM"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
