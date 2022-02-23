@@ -15,6 +15,7 @@ alias feh='feh --scale-down --auto-zoom'
 
 # alias vi to vim
 alias vi=vim
+alias shutdown="shutdown now"
 
 # 01;36 light cyan, 01;34 light blue (same as ls) 00;34 blue
 # https://bashrcgenerator.com/
