@@ -199,6 +199,14 @@ ssh-keygen -t rsa // this will generate the key pair if you don't already have o
 ssh-copy-id -i ~/.ssh/id\_rsa.pub git@sibyl
 ```
 
+# certbot / SSL
+
+Using letsencrypt/certbot on sibyl, can renew periodically with
+
+```
+certbot renew
+```
+
 # audio input
 
 Not fully working yet, but uncommented ```load-module module-alsa-source device=hw:0,0``` from /etc/pulse/default.pa, and installed pavucontrol (which also installed atkmm cairomm glibmm gtkmm3 libsigc++ pangomm)
