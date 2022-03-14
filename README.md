@@ -12,6 +12,14 @@ This is just a few of my personal system preferences, updated over time, for whe
 
 For i3/sway you'll have to install feh (sudo pacman -S feh) and you may have to move the config out of etc
 
+# Install packages 
+
+Other than just using pacman you can clone the repo from the AUR and run this command inside it
+
+```
+makepkg -si
+```
+
 # Scroll direction
 
 To invert scrolling, you'll want to edit your xorg server by adding ```Option "NaturalScrolling" "True"``` to the touchpad and mouse InputClass in /usr/share/X11/xorg.conf.d/40-libinput.conf
