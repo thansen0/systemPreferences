@@ -230,6 +230,16 @@ Used to look up usernames of other users. https://github.com/sherlock-project/sh
 python3 sherlock username
 ```
 
+# Python Virtual Environment 
+
+```
+mkdir env
+python3 -m venv venv
+source venv/bin/activate
+
+deactivate # end session
+```
+
 # Python Jupyter
 
 Run `jupyter notebook` in the command line to open it up
