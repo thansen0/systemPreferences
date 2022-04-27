@@ -252,6 +252,14 @@ Convert a jpg to a png
 ffmpeg -i input.jpg -preset ultrafast output.png
 ```
 
+# File size
+
+You can use du to get the file size of something, h is human readable and s is summarize
+
+```
+du -sh filename.file
+```
+
 # Brave (Chrome)
 
 ctl-# to cycle through tabs
