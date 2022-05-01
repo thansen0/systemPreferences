@@ -233,7 +233,7 @@ python3 sherlock username
 # Python Virtual Environment 
 
 ```
-mkdir env
+mkdir venv
 python3 -m venv venv
 source venv/bin/activate
 
