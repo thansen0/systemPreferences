@@ -117,7 +117,7 @@ Host curie
 # tmux
 
 ```
-tmux new -S session-name
+tmux new -s session-name
 tmux ls
 tmux attach -d -t session-name
 tmux attach -t session-number
